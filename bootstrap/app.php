@@ -14,6 +14,12 @@ $events = new Dispatcher($container);
 // 2. Instancier le routeur
 $router = new Router($events, $container);
 
+// Register web routes
+$router->group([], fn () => require APP_ROOT .'/routes/web.php');
+
+// Register web routes
+$router->group([], fn () => require APP_ROOT .'/routes/api.php');
+
 // 3. Définir vos routes
 $router->get('/', function () {
     return 'Bienvenue sur ma page d\'accueil autonome !';

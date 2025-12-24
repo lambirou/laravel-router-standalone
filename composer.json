@@ -1,0 +1,28 @@
+{
+  "name": "lambirou/laravel-router-standalone",
+  "description": "PHP application build with Laravel router standalone.",
+  "type": "project",
+  "license": "MIT",
+  "homepage": "https://github.com/lambirou/laravel-router-standalone",
+  "support": {
+    "issues": "https://github.com/lambirou/laravel-router-standalone/issues",
+    "source": "https://github.com/lambirou/laravel-router-standalone"
+  },
+  "authors": [
+    {
+      "name": "Roland Edi",
+      "email": "rolandedi@codivoire.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "illuminate/routing": "^8.83",
+    "illuminate/events": "^8.83",
+    "illuminate/container": "^8.83",
+    "illuminate/http": "^8.83"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^6.0",
+    "laravel/pint": "^1.5"
+  }
+}
