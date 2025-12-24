@@ -63,3 +63,7 @@ Contributions bienvenues : ouvrez une issue pour discuter d'un changement, ou pr
 ## Licence
 
 Ce projet est fourni sous la licence indiquée dans le fichier `LICENSE`.
+
+## Extension
+
+Consulter le projet : https://github.com/mattstauffer/Torch
