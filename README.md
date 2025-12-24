@@ -66,4 +66,4 @@ Ce projet est fourni sous la licence indiquée dans le fichier `LICENSE`.
 
 ## Extension
 
-Pour étendre avec d'autres composants Laravel onsulter le projet suivant : https://github.com/mattstauffer/Torch
+Pour étendre avec d'autres composants Laravel consulter le projet suivant : https://github.com/mattstauffer/Torch
