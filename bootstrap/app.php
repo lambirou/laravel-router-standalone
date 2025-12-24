@@ -1,11 +1,14 @@
 <?php
 
-require APP_ROOT . '/vendor/autoload.php';
-
 use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Router;
+
+require APP_ROOT . '/vendor/autoload.php';
+
+// Load environment variables
+\Dotenv\Dotenv::createImmutable(APP_ROOT)->safeLoad();
 
 // 1. Créer le conteneur et le dispatcher d'événements (obligatoires)
 $container = new Container();
