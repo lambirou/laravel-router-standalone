@@ -1,4 +1,4 @@
-# laravel-router-standalone
+# Laravel Router standalone
 
 Un petit projet permettant d'utiliser le routeur Laravel de manière autonome (sans la totalité du framework). Idéal pour des micro-services ou pour réutiliser la gestion de routes d'Illuminate/Routing dans des contextes légers.
 
@@ -63,9 +63,3 @@ Contributions bienvenues : ouvrez une issue pour discuter d'un changement, ou pr
 ## Licence
 
 Ce projet est fourni sous la licence indiquée dans le fichier `LICENSE`.
-
----
-
-Si vous souhaitez que j'ajoute des exemples plus avancés (middleware, groupes de routes, tests), dites-le et je les intègre au README.
-
-# laravel-router-standalone
