@@ -1,9 +1,11 @@
 <?php
 
-$router->get('/', function () {
-    return 'Bienvenue sur ma page d\'accueil autonome !';
-});
+use App\Http\Controllers\MainController;
+use Illuminate\Routing\Router;
 
-$router->get('/hello/{name}', function ($name) {
-    return "Bonjour, " . ucfirst($name);
-});
+/**
+ * @var Router $router
+ */
+
+$router->get('/', [MainController::class, 'index']);
+$router->get('/hello/{name}', [MainController::class, 'hello']);
