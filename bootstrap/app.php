@@ -1,6 +1,6 @@
 <?php
 
-require 'vendor/autoload.php';
+require APP_ROOT . '/vendor/autoload.php';
 
 use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher;
@@ -15,18 +15,13 @@ $events = new Dispatcher($container);
 $router = new Router($events, $container);
 
 // Register web routes
-$router->group([], fn () => require APP_ROOT .'/routes/web.php');
-
-// Register web routes
-$router->group([], fn () => require APP_ROOT .'/routes/api.php');
-
-// 3. Définir vos routes
-$router->get('/', function () {
-    return 'Bienvenue sur ma page d\'accueil autonome !';
+$router->group([], function () use ($router) {
+    require APP_ROOT .'/routes/web.php';
 });
 
-$router->get('/hello/{name}', function ($name) {
-    return "Bonjour, " . ucfirst($name);
+// Register API routes
+$router->group(['prefix' => 'api'], function () use ($router) {
+    require APP_ROOT .'/routes/api.php';
 });
 
 // 4. Créer la requête à partir des globales PHP
